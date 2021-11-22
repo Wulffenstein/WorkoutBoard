@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Workouts</title>
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/base.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/workouts.css') }}" />
+    </head>
+    <body>
+        <div id="bine">
+            <h1>Bine</h1>
+            <div id="workoutSelection">
+                <div>
+                    <label for="bineWorkout">Workout</label> 
+                    <select id="bineWorkout">
+                    </select>
+                </div>
+                <div>
+                    <table id="bineTable">
+                        <thead>
+                            <tr>
+                                <th class="exerciseNumber">#</th>
+                                <th class="exerciseSetsReps">Sets x Reps</th>
+                                <th>Exercise</th>
+                                <th class="exerciseWeight">Weight</th>   
+                            </tr>  
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="anders">
+            <h1>Anders</h1>
+            <div id="workoutSelection">
+                <div>
+                    <label for="andersWorkout">Workout</label> 
+                    <select id="andersWorkout">
+                    </select>
+                </div>
+                <div>
+                    <table id="andersTable">
+                        <thead>
+                            <tr>
+                                <th class="exerciseNumber">#</th>
+                                <th class="exerciseSetsReps">Sets x Reps</th>
+                                <th>Exercise</th>
+                                <th class="exerciseWeight">Weight</th>   
+                            </tr>  
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>                    
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="{{ url_for('static', filename='scripts/workout.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='scripts/htmlUtils.js') }}" type="text/javascript"></script>
+    </body>
+</html>

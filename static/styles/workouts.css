@@ -1,0 +1,38 @@
+body > div {
+    border: 1px solid white;
+    float:left;
+    padding: 5px;
+    margin: 5px;
+    width: 48%;
+    text-align: center;
+}
+
+table{
+    font-size: 14pt;
+    width: 100%;
+    border-spacing: 0px;;
+}
+
+.evenLine{
+    background-color: rgb(30, 30, 30);
+}
+
+.exerciseNumber{
+    width: 10%;
+}
+
+.exerciseSetsReps{
+    width: 20%; 
+}
+
+.exerciseWeight{
+    width: 15%   
+}
+
+#bine{
+    color:indianred;
+}
+
+#anders{
+    color: cornflowerblue;
+}

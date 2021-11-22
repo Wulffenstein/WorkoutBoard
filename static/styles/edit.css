@@ -1,0 +1,59 @@
+body > table{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    color: white;
+    height: 100%;
+}
+
+td{
+    text-align: center;
+    vertical-align: top;
+}
+
+td > input{
+    width: 60px;
+}
+
+input[type=number]{
+    text-align: right;
+}
+
+#exercises{
+    width: 30%;
+}
+
+#workoutLineGrid{
+    margin: 0 auto;
+    width: 60%;
+}
+
+
+.group{
+    border: 1px solid white;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+.width200{
+    width: 200px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.button{
+    border: none;
+    cursor: pointer;
+}
+
+.delete{
+    background-color: salmon;
+}
+
+.new{
+    background-color: springgreen;
+}

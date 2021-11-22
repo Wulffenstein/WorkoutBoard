@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit</title>
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/base.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/edit.css') }}" />
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td id="exercises">
+                    <div class="group">
+                        <h2>Exercises</h2>
+                        <div>
+                            <input class="width200" type="text" id="newExerciseName" placeholder="New exercise" />
+                            <input class="button new" type="button" id="newExerciseBtn" value="Save" disabled />
+                        </div>
+                        <div>
+                            <select class="width200" id="exercisesList" size="20" multiple>
+                        
+                            </select>
+                            <input class="button delete" type="button" id="deleteExerciseBtn" value="Delete" />
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div id="workoutHeader" class="group">
+                        <h2>Header</h2>
+                        <div>
+                            <input class="width200" type="text" id="newWorkoutName" placeholder="New workout" />
+                            <input class="button new" type="button" id="newWorkoutBtn" value="Save" disabled />
+                        </div>
+                        <div>
+                            <select class="width200" id="workoutList">
+                            </select>
+                            <input class="button delete" type="button" id="workoutDeleteBtn" value="Delete" />
+                        </div>
+                    </div>
+                    <div id="workoutLines" class="group">
+                        <h2>Lines</h2>
+                        
+                        <table id="workoutLineGrid">
+                            <thead>
+                                <tr>
+                                    <th>Exercise</th>
+                                    <th>Sets</th>
+                                    <th>Reps</th>
+                                    <th>Weight</th>
+                                    <th>Order</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+
+                        <input class="button new" type="button" id="newWorkoutLineBtn" value="New line" />
+                        <input class="button new" type="button" id="workoutLineGridSave" value="Save" disabled />
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <script src="{{ url_for('static', filename='scripts/edit.js') }}"></script>
+        <script src="{{ url_for('static', filename='scripts/htmlUtils.js') }}"></script>
+    </body>
+</html>
